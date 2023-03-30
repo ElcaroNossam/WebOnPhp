@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-position: inside;
+}
+
+*:focus {
+    outline: none
+}
+
+body {
+    font: 1em/1.5 Arial, Helvetica, sans-serif;
+    color: #333
+}
+
+body> form, body > ol, body > ul, body > p {
+    margin: 20px auto;
+    width: 500px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    background: #f9f9f9
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu > li{
+    list-style: none;
+    gap: 10px;
+    outline: 1px solid #b7b7b7;
+    border-radius: 2px;
+}
+
+.menu > li > a{
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    transition: background-color 0.1s;
+}
+
+.menu > li > a:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column
+}
+
+form > :not(label) {
+    padding: 6px 8px;
+    margin: 10px 0;
+    outline: 1px solid #b7b7b7;
+    border: 0;
+    border-radius: 3px
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid #333;
+    box-sizing: border-box
+}
+
+input[type=submit] {
+    background: #333;
+    color: #fff;
+    cursor: pointer
+}
+
+ul > li {
+    margin-left: 20px;
+}
+
+ul > li.li-header:first-child {
+    font-weight: 700;
+    list-style: none
+}
+
+.msg, code {
+    font-weight: 700
+}
+
+code, p {
+    background: #f9f9f9
+}
+
+code {
+    padding: 1px 2px;
+    outline: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: copy;
+    color: #d2691e;
+    position: relative
+}
+
+code:hover {
+    background-color: #d9cbcb
+}
+blockquote{
+    margin: 10px 20px;
+    padding: 5px;
+    font: 300 0.9em/1.1 Arial, Helvetica, sans-serif;
+    color: rgba(46, 29, 23, .45);
+    box-sizing: border-box;
+    text-align: justify;
+}
+.msg {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    z-index: 500
+}
+
+hr{
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-top: 2px solid #ccc;
+}
